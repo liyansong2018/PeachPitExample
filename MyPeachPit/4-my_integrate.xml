@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+
+	<Include ns="MyState" src="E:\\MyPeachPit\\3-my_state.xml" />
+	
+	<Agent name="LocalAgent">
+		<!--
+		<Monitor class="TcpPort">
+			<Param name="IP" value="##TargetAddress##" />
+			<Param name="Port" value="##TargetPort##" />
+			<Param name="Action" value="Fault" />
+			<Param name="State" value="Closed" />
+		</Monitor>
+		!-->
+	</Agent>
+	
+	<Test name="Default">
+		<Agent ref="LocalAgent" />
+		<StateModel ref="MyState:My_State" />
+
+		<Publisher class="Tcp" name="tcp">
+			<Param name="Host" value="127.0.0.1" />
+			<Param name="Port" value="8080" />
+			<Param name="Timeout" value="5000" />
+		</Publisher>
+
+		<Logger class="File">
+			<Param name="Path" value="##LogPath##" />
+		</Logger>
+		
+	</Test>
+</Peach>

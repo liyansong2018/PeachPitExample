@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+
+	<Include ns="MyData" src="E:\\MyPeachPit\\1-my_data.xml" />
+	
+	<StateModel name="My_State" initialState="state_one">
+		<State name="state_one">
+			<Action type="output">
+				<DataModel ref="MyData:my_data_model" />
+				<Data fileName="E:\\MyPeachPit\\0-login.bin" />
+			</Action>
+			
+			<Action type="input">
+				<DataModel name="NULL">
+					<Blob />
+				</DataModel>
+			</Action>
+		</State>
+	</StateModel>
+
+</Peach>

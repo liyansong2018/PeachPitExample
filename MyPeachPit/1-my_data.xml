@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+
+	<DataModel name="my_data_model">
+		<Block name="1st_line">
+			<String value="POST" mutable="false" />
+			<String value=" " token="true" mutable="false" />
+			<String value="/formLogin.htm" mutable="false" />
+			<String value=" " token="true" mutable="false" />
+			<String value="HTTP/1.1" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="2nd_line">
+			<String value="Host" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="192.168.10.1" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="3rd_line">
+			<String value="Content-Length" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="103" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="4th_line">
+			<String value="Cache-Control" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="max-age=0" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="5th_line">
+			<String value="Origin" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="http://192.168.10.1" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="6th_line">
+			<String value="Upgrade-Insecure-Requests" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="1" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="7th_line">
+			<String value="Content-Type" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="application/x-www-form-urlencoded" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="8th_line">
+			<String value="User-Agent" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="9th_line">
+			<String value="Accept" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="10th_line">
+			<String value="Referer" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="http://192.168.10.1/login.htm" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="11th_line">
+			<String value="Accept-Encoding" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="gzip, deflate" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="12th_line">
+			<String value="Accept-Language" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="zh-CN,zh;q=0.9" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="13th_line">
+			<String value="Connection" mutable="false" />
+			<String value=": " token="true" mutable="false" />
+			<String value="close" mutable="false" />
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+			
+		<Block name="14th_blank">
+			<String value="\r\n" token="true" mutable="false" />
+		</Block>
+		
+		<Block name="15th_body">
+			<String value="login_name" mutable="false" />
+			<String value="=" token="true" mutable="false" />
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="1573266032330" mutable="false" />
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="setLang=" mutable="false" />
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="setNoAutoLang=" mutable="false" />			
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="login_n" mutable="false" />
+			<String value="=" token="true" mutable="false" />
+			
+			<String value="admin" mutable="true" />
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="login_pass" mutable="false" />
+			<String value="=" token="true" mutable="false" />
+			<String value="123456" mutable="true" />
+			
+			<String value="&amp;" token="true" mutable="false" />
+			<String value="languageSel" mutable="false" />
+			<String value="=" token="true" mutable="false" />
+			
+			<String value="1" mutable="false" />
+		
+		</Block>	
+		
+	</DataModel>
+
+</Peach>
